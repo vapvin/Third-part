@@ -19,3 +19,5 @@ Practice To React
 - [x] ~~TV Show Detail~~
 - [x] ~~Movie Show Detail~~
 - [x] ~~Search (Movie, TV)~~
+
+## Sync to MAC
