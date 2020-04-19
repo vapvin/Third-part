@@ -16,5 +16,6 @@ Practice To React
 - [x] ~~Top Rated (TV, Movie)~~
 - [x] ~~Popular (TV, Movie)~~
 - [x] ~~Airing Today (TV)~~
-- [ ] TV Show Detail
-- [ ] Movie Show Detail
+- [x] ~~TV Show Detail~~
+- [x] ~~Movie Show Detail~~
+- [x] ~~Search (Movie, TV)~~
