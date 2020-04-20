@@ -1,24 +1,61 @@
-import React, {useState} from 'react';
+import React from 'react';
 import SearchPresenter from './SearchPresenter';
+import { moviesApi, tvApi } from '../../api';
 
-function SearchContainer(){
-    const [search, setSearch] = useState({
+
+export default class extends React.Component{
+    state = {
         movieResults: null,
         tvResults: null,
         searchTerm: '',
         error: null,
         loading: false
-    });
-    const {movieResults, tvResults, searchTerm,error,loading} = search;
-    return (
-        <SearchPresenter
-            movieResults={movieResults}
-            tvResults={tvResults}
-            searchTerm={searchTerm}
-            error={error}
-            loading={loading}
-        />
-    )
+    };
+
+    handleSubmit = () => {
+        const {searchTerm} = this.state;
+        if(searchTerm !== ""){
+            this.searchByTerm();
+        }
+    }
+
+    searchByTerm = async() => {
+        const {searchTerm} = this.state;
+        this.setState({
+            loading: true
+        });
+        try{
+            const {data: {results: movieResults}} = await moviesApi.search(searchTerm);
+            const {data: {results: tvResults}} = await tvApi.search(searchTerm);
+            this.setState({
+                movieResults,
+                tvResults,
+            });
+        } catch(error) {
+            this.setState({
+                error: "Can Not Found"
+            });
+        } finally {
+            this.setState({
+                loading: false
+            });
+        }
+    }
+    
+    render(){
+        const {movieResults, tvResults, searchTerm,error,loading} = this.state;
+
+        return (
+
+            <SearchPresenter
+                movieResults={movieResults}
+                tvResults={tvResults}
+                searchTerm={searchTerm}
+                error={error}
+                loading={loading}
+                handleSubmit={this.handleSubmit}
+            />
+        )
+    }
 }
 
-export default SearchContainer;
