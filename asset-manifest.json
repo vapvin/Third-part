@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/Third-part/static/js/main.8fbfb41d.chunk.js",
-    "main.js.map": "/Third-part/static/js/main.8fbfb41d.chunk.js.map",
+    "main.js": "/Third-part/static/js/main.cd07e449.chunk.js",
+    "main.js.map": "/Third-part/static/js/main.cd07e449.chunk.js.map",
     "runtime-main.js": "/Third-part/static/js/runtime-main.547c9aba.js",
     "runtime-main.js.map": "/Third-part/static/js/runtime-main.547c9aba.js.map",
     "static/js/2.e3c4c480.chunk.js": "/Third-part/static/js/2.e3c4c480.chunk.js",
     "static/js/2.e3c4c480.chunk.js.map": "/Third-part/static/js/2.e3c4c480.chunk.js.map",
     "index.html": "/Third-part/index.html",
-    "precache-manifest.8ba9605e0d95cdf43beff3f0589fdc85.js": "/Third-part/precache-manifest.8ba9605e0d95cdf43beff3f0589fdc85.js",
+    "precache-manifest.d75bbdf7c8a91e31da4212d730cfeca1.js": "/Third-part/precache-manifest.d75bbdf7c8a91e31da4212d730cfeca1.js",
     "service-worker.js": "/Third-part/service-worker.js",
     "static/js/2.e3c4c480.chunk.js.LICENSE.txt": "/Third-part/static/js/2.e3c4c480.chunk.js.LICENSE.txt",
     "static/media/noPosterSmall.png": "/Third-part/static/media/noPosterSmall.87a0eb6a.png"
@@ -15,6 +15,6 @@
   "entrypoints": [
     "static/js/runtime-main.547c9aba.js",
     "static/js/2.e3c4c480.chunk.js",
-    "static/js/main.8fbfb41d.chunk.js"
+    "static/js/main.cd07e449.chunk.js"
   ]
 }
